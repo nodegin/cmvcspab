@@ -1,4 +1,13 @@
-<div id="flights"></div>
+<div class="ui segment">
+  <div class="ui breadcrumb">
+    <a class="section" href="#!/">Home</a>
+    <i class="right angle icon divider"></i>
+    <div class="active section">Flight Selection</div>
+  </div>
+</div>
+
+<div id="flights" class="ui segment limited"></div>
+
 <script>
 /* global flights */
 /* global Airport */
@@ -11,9 +20,12 @@
     var destAirport = Airport.find(flight.arrival.airport);
     $('#flights').append(flight.carrier + ' - ' + flightId + '<br>' +
       '<img alt src="' + flagRepo + origAirport.country + '.png">' +
-      'From ' + origAirport.name + ' at ' + flight.departure.time +
+      'Depart at ' + flight.departure.time + ' in ' + origAirport.name +
+      ' (' + flight.departure.airport + ')' +
+      '<br>' +
       '<img alt src="' + flagRepo + destAirport.country + '.png">' + 
-      'to ' + destAirport.name + ' at ' + flight.arrival.time +
+      'Arrive at ' + flight.arrival.time + ' in ' + destAirport.name +
+      ' (' + flight.arrival.airport + ')' +
       '<hr>');
     
   });

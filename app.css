@@ -29,7 +29,12 @@ main {
   right: 0;
   top: 64px;
 }
-#content { width: 60% }
+#content {
+  max-height: 90%;
+  overflow-x: hidden;
+  padding: 0 8px;
+  width: 62%;
+}
 #dock {
   bottom: 0;
   position: absolute;

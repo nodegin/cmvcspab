@@ -82,6 +82,28 @@
           time: '11:00',
           airport: 'CBR'
         }
+      },
+      'CX920': {
+        carrier: 'Cathay Paficif',
+        departure: {
+          time: '08:00',
+          airport: 'HKG'
+        },
+        arrival: {
+          time: '12:45',
+          airport: 'KIX'
+        }
+      },
+      'HA71': {
+        carrier: 'Hong Kong Airways',
+        departure: {
+          time: '17:30',
+          airport: 'ICN'
+        },
+        arrival: {
+          time: '21:00',
+          airport: 'HKG'
+        }
       }
     };
 
