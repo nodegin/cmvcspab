@@ -13,3 +13,9 @@ You need a web server (nginx/apache) for serving the static resources (.html, .j
 For development, you need CoffeeScript to write coffee, and compiles into JS
 
 Run ```watch-compile.sh``` to watch & recompile your coffees when you're coding
+
+## credits
+
+http://jquery.com/
+
+http://semantic-ui.com
