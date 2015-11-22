@@ -1,0 +1,48 @@
+<div class="ui segment">
+  <div class="ui breadcrumb">
+    <a class="section" href="#!/">Home</a>
+    <i class="right angle icon divider"></i>
+    <div class="active section">Register</div>
+  </div>
+</div>
+
+<div class="ui attached segment">
+  <form class="ui form" action="#!/member/register">
+    <div class="field">
+      <label>Username</label>
+      <input name="username" type="text" autocomplete="off">
+    </div>
+    <div class="field">
+      <label>Password</label>
+      <input name="password" type="password" autocomplete="off">
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input name="email" type="text" autocomplete="off">
+    </div>
+    <div class="field">
+      <label>Phone number</label>
+      <input name="phone" type="text" autocomplete="off">
+    </div>
+    <div class="field">
+      <label>Gender</label>
+      <div class="ui radio checkbox">
+        <input name="gender" type="radio" value="m" checked>
+        <label>Male</label>
+      </div>
+      &emsp;
+      <div class="ui radio checkbox">
+        <input name="gender" type="radio" value="f">
+        <label>Female</label>
+      </div>
+    </div>
+    <button class="ui button" type="submit">Submit</button>
+  </form>
+</div>
+
+<script>
+$('form').submit(function (e) {
+  e.preventDefault();
+  location.hash = '#!/member/register.do/' + $(this).serializeBase64();
+});
+</script>

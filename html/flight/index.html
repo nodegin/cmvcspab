@@ -1,0 +1,22 @@
+<div id="flights"></div>
+<script>
+/* global flights */
+/* global Airport */
+(function(flagRepo) {
+  
+  Object.keys(flights).forEach(function (flightId) {
+    
+    var flight = flights[flightId];
+    var origAirport = Airport.find(flight.departure.airport);
+    var destAirport = Airport.find(flight.arrival.airport);
+    $('#flights').append(flight.carrier + ' - ' + flightId + '<br>' +
+      '<img alt src="' + flagRepo + origAirport.country + '.png">' +
+      'From ' + origAirport.name + ' at ' + flight.departure.time +
+      '<img alt src="' + flagRepo + destAirport.country + '.png">' + 
+      'to ' + destAirport.name + ' at ' + flight.arrival.time +
+      '<hr>');
+    
+  });
+  
+})('https://cdn.rawgit.com/stevenrskelton/flag-icon/master/png/16/country-4x3/');
+</script>

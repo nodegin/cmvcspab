@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+  <title>BestTrip Travel Agency</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/Semantic-Org/Semantic-UI/master/dist/semantic.min.css">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="header">BestTrip Travel Agency</div>
+  <main>
+    <div id="content"></div>
+  </main>
+  <div id="dock">
+    <ul>
+      <li>
+        <a href="#!/flight" data-title="Flight">
+          <i class="military icon"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#!/hotel/13456" data-title="Hotel">
+          <i class="building icon"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#!/member" data-title="Member">
+          <i class="user icon"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div id="loader" class="ui active inverted dimmer">
+    <div class="ui text loader">Loading</div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/Semantic-Org/Semantic-UI/master/dist/semantic.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

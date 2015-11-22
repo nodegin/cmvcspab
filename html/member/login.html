@@ -1,0 +1,31 @@
+<div class="ui segment">
+  <div class="ui breadcrumb">
+    <a class="section" href="#!/">Home</a>
+    <i class="right angle icon divider"></i>
+    <div class="active section">Login</div>
+  </div>
+</div>
+
+<div class="ui attached segment">
+  <form class="ui form" action="#!/member/register">
+    <div class="field">
+      <label>Username</label>
+      <input name="username" type="text" autocomplete="off">
+    </div>
+    <div class="field">
+      <label>Password</label>
+      <input name="password" type="password" autocomplete="off">
+    </div>
+    <button class="ui button" type="submit">Submit</button>
+    &emsp;
+    Don't have an account?
+    <a href="#!/member/register">Register now</a>
+  </form>
+</div>
+
+<script>
+$('form').submit(function (e) {
+  e.preventDefault();
+  location.hash = '#!/member/login.do/' + $(this).serializeBase64();
+});
+</script>
