@@ -1,6 +1,8 @@
-## static-mvc-spa-boilerplate
+## cmvcspab
 
-A static Model-View-Controller Single-Page-Application boilerplate that provide modular programming in client-side with CoffeeScript
+A Client-side Model-View-Controller Single-Page-Application Boilerplate,
+
+provides modular programming in client-side with CoffeeScript
 
 I wrote and used this boilerplate in my school's assignment
 
